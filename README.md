@@ -4,22 +4,22 @@ Pinpad-VT100
 Node.js Module to comunicate with pinpads that work with protocol VT100
 
 ## Installation
-
+```
   npm install Pinpad-VT100 --save
-
+```
 ## Usage
 
-  var pinpad = require('Pinpad-VT100');
+```
+var pinpad = require('Pinpad-VT100');
   
-  function status(obj,cli) {    //function that will be call if the user press A on the keyboard
-    pinpad.cls();
-    pinpad.print('Status....',true);    
-  }
+function status(obj,cli) {    //function that will be call if the user press A on the keyboard
+	pinpad.cls();
+	pinpad.print('Status....',true);    
+}
 
-  pinpad.connect({ip:"192.168.1.253",port:8126,sts:status}); //ip and port of the pinpad
-  pinpad.print('test',true); // print and jump one line
-
-  
+pinpad.connect({ip:"192.168.1.253",port:8126,sts:status}); //ip and port of the pinpad
+pinpad.print('test',true); // print and jump one line
+```  
 
 ## Tests
 
