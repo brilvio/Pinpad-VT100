@@ -1,5 +1,5 @@
 {
-  "name": "pinpad-VT100",
+  "name": "pinpad-vt100",
   "version": "0.1.0",
   "description": "Node.js Module to comunicate with pinpads that work with protocol VT100",
   "main": "index.js",
