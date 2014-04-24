@@ -14,12 +14,17 @@ var pinpad = module.exports = function(config) {
 };
 
 (function() {   
-     this.cls = function() {
+    this.cls = function() {
 	  client.write(home);
       client.write(clearScreen);
       client.write(home);
       lineAt = 1;
 	}
+	
+	this.setObj = function(object) { 
+	  obj = object;
+	}
+	
 	this.connect = function(options) { 
 	    status = options.sts;
 		client = require('net').Socket();   
@@ -41,7 +46,8 @@ var pinpad = module.exports = function(config) {
 				pinpad.print(data.toString(),false); 
 			}
 		});
-	};    
+	}; 
+ 	
 	
 	this.print = function(text,jumpLine) {
 		client.write(text);
