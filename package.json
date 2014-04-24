@@ -1,0 +1,21 @@
+{
+  "name": "Pinpad-VT100",
+  "version": "0.1.0",
+  "description": "Node.js Module to comunicate with pinpads that work with protocol VT100",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brilvio/Pinpad-VT100.git"
+  },
+  "keywords": [
+    "vt100"
+  ],
+  "author": "Fernando Derkoski <brilvio@gmail.com>",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/brilvio/Pinpad-VT100/issues"
+  }
+}
