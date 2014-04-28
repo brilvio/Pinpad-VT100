@@ -4,12 +4,12 @@ Pinpad-VT100
 Node.js Module to comunicate with pinpads that work with protocol VT100
 
 ## Installation
-```
+```javascript
   npm install pinpad-vt100 --save
 ```
 ## Usage
 
-```
+```javascript
 var pinpad = require('pinpad-vt100');
   
 function status(obj,cli) {    //function that will be call if the user press A on the keyboard
